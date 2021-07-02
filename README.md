@@ -1,24 +1,27 @@
-# package-<#PACKAGE-NAME>
+# testapp-package
 
-This package provides <#PACKAGE> functionality using [<#PACKAGE-NAME>](<#PACKAGE-NAME-DOCS-URL>).
+This package provides a test application to validate Knative functionality.
 
 ## Components
 
-* <#PACKAGE-NAME>
+* testappapp
 
 ## Configuration
 
-The following configuration values can be set to customize the <#PACKAGE-NAME> installation.
+The following configuration values can be set to customize the testappapp installation.
 
 ### Global
 
 | Value | Required/Optional | Description |
 |-------|-------------------|-------------|
-| `namespace` | Optional | The namespace in which to deploy <#PACKAGE-NAME>. |
+| `namespace` | Optional | The namespace in which to deploy testappapp. |
+| `wildcard_domain` | Required | The wildcard DNS domain in which applications will be exposed.|
+| `privileged_clusterrole_name` | Optional | If PSPs are enabled on the cluster, this is the name of the privileged clusterrole that allows our test app to start |
+
 
 ## Usage Example
 
-This walkthrough guides you through using <#PACKAGE-NAME>...
+Just delpoy the package and test it. There should be an `ingress` ready to use in the `namespace` you used. 
 
 ## Develop checklist
 

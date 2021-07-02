@@ -1,3 +1,6 @@
 #@data/values
 ---
-#! Add your values here
+#! The namespace in which to deploy testapp
+namespace: testapp
+privileged_clusterrole_name: 
+wildcard_domain: REPLACE_ME
