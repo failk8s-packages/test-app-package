@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: testapp-config
+  namespace: testapp-package
+stringData:
+  values.yml: null
