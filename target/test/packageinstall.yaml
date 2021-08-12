@@ -1,15 +1,15 @@
 apiVersion: packaging.carvel.dev/v1alpha1
 kind: PackageInstall
 metadata:
-  name: testapp-package
+  name: testapp
   namespace: testapp-package
 spec:
-  serviceAccountName: testapp-sa
+  serviceAccountName: testapp
   packageRef:
-    refName: testapp.tkgdev.failk8s.com
+    refName: testapp.dev.failk8s.com
     versionSelection:
-      constraints: develop
+      constraints: 0.0.0+develop
       prereleases: {}
   values:
   - secretRef:
-      name: testapp-config
+      name: testapp
