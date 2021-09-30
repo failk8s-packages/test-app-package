@@ -4,7 +4,7 @@
         "name": "testapp",
         "domain": "dev.failk8s.com",
         "displayName": "Test k8s application",
-        "version": "1.0.0"
+        "version": "develop"
     },
     "packages": []
 }
