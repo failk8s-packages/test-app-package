@@ -2,8 +2,9 @@
     "registry": "quay.io/failk8s",
     "package": {
         "name": "testapp",
-        "domain": "tkgdev.failk8s.com",
+        "domain": "dev.failk8s.com",
         "displayName": "Test k8s application",
         "version": "1.0.0"
-    }
+    },
+    "packages": []
 }
