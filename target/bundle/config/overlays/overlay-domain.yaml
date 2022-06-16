@@ -3,6 +3,11 @@
 
 #@overlay/match by=overlay.subset({"kind":"Ingress", "metadata": {"name": "testapp"}})
 ---
+metadata:
+  #@overlay/match missing_ok=True
+  annotations:
+    #@overlay/match missing_ok=True
+    cert-manager.io/cluster-issuer: wildcard
 spec:
   rules:
   #@overlay/match by=overlay.index(0)
